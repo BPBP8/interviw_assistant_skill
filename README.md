@@ -1,6 +1,6 @@
-# Interview Assistant Skill
+# Interview Assistant - 面试助手
 
-面试助手 Claude Code Skill，帮助用户高效备战面试。
+一个通用的AI面试准备助手提示词，适用于各种AI助手（Claude, GPT, Gemini等）。
 
 ## 功能特性
 
@@ -10,13 +10,12 @@
 - **问题模拟** - 基于真实面经生成面试问题
 - **两种模式** - 模拟面试模式 / 知识库备考模式
 
-## 安装使用
+## 快速开始
 
-### 方式一：本地 Skills 目录
+### 在Claude Code中使用
 
-1. 克隆此仓库
-2. 将 `skills/interview-assistant` 文件夹复制到你的 Claude Code 本地 skills 目录
-3. 在 `settings.json` 中添加配置：
+1. 将 `skills/interview-assistant/SKILL.md` 内容复制到Claude Code的skill配置中
+2. 或者配置本地skills目录：
 
 ```json
 {
@@ -31,31 +30,34 @@
 }
 ```
 
-### 方式二：分享给朋友
+### 在其他AI助手使用
 
-直接将 `skills/interview-assistant` 文件夹分享即可。
+将 `skills/interview-assistant/SKILL.md` 中的内容作为系统提示词或开场白发送给AI即可。
 
-## 使用前提
+## 工作流程
 
-- Claude Code 中已开启 WebSearch 权限（用于搜索最新面经）
-
-## 使用示例
-
-```
-用户: 我要面试腾讯产品经理岗位
-助手: 好的！请上传你的简历和目标岗位的JD，我来帮你准备。
-```
+1. **收集信息** - 接收用户简历和目标岗位JD
+2. **简历分析** - 挖掘简历亮点，输出亮点报告
+3. **联网搜面经** - 搜索该岗位/公司的最新面试经验
+4. **自我介绍** - 定制1-2分钟自我介绍稿
+5. **模拟面试** - 选择模式进行面试练习
+6. **复盘改进** - 总结表现，提供提升建议
 
 ## 项目结构
 
 ```
 interviw_assistant_skill/
 ├── README.md
-├── skills/
-│   └── interview-assistant/
-│       └── SKILL.md          # 核心skill文件
-└── .gitignore
+├── .gitignore
+└── skills/
+    └── interview-assistant/
+        └── SKILL.md          # 面试助手提示词
 ```
+
+## 使用前提
+
+- AI助手需要具备联网搜索能力（用于搜索最新面经）
+- 如果AI不支持联网，仍可使用通用面试题库进行准备
 
 ## License
 
