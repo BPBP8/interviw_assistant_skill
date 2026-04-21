@@ -45,12 +45,12 @@
 
 ### 在Claude Code中使用
 
-1. 将 `skills/interview-assistant/SKILL.md` 内容复制到Claude Code的skill配置中
+1. 将 `SKILL.md` 内容复制到Claude Code的skill配置中
 2. 或者配置本地skills目录
 
 ### 在其他AI助手使用
 
-将 `skills/interview-assistant/SKILL.md` 中的内容作为系统提示词或开场白发送给AI即可。
+将 `SKILL.md` 中的内容作为系统提示词或开场白发送给AI即可。
 
 ## 工作流程
 
@@ -82,10 +82,8 @@
 ```
 interviw_assistant_skill/
 ├── README.md
-├── .gitignore
-└── skills/
-    └── interview-assistant/
-        └── SKILL.md          # 面试助手提示词
+├── SKILL.md          # 面试助手提示词
+└── .gitignore
 ```
 
 ## License
